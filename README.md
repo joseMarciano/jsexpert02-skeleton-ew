@@ -1,16 +1,4 @@
 # Projeto base da JS Expert Week 2.0
-
-- Acesse o [home](./pages/home/index.html) para acessar a home page
-- Acesse o [room](./page/room/index.html) uma room específica
-
-## Home Page
-
-![home page](./prints/home.png)
-
-## Room
-
-![room](./prints/room.png)
-
 ### Créditos
 
 - Layout da home foi baseada no codepen do [Nelson Adonis Hernandez
