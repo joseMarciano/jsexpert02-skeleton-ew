@@ -21,13 +21,13 @@ class View {
                 video.play()
             }
             );
-            
+
         }
         return video;
     }
 
-    renderVideo({ userId, stream = null, url = null, isCurrentId = false }) {
-        const video = this.createVideoElement({ src: url, srcObjetc: stream });
+    renderVideo({ userId, stream = null, url = null, isCurrentId = false, muted = true }) {
+        const video = this.createVideoElement({ muted, src: url, srcObjetc: stream });
         this.appendToHTMLTree({ userId, video, isCurrentId });
     }
 
@@ -43,9 +43,13 @@ class View {
 
         const videoGrid = document.getElementById('video-grid');
         videoGrid.append(div);
-
-
     }
 
+    setParticipants(count){
+        const mySelf = 1;
+        const participants = document.getElementById('participants');
+        participants.innerHTML = (count + mySelf);
+
+    }
 
 }

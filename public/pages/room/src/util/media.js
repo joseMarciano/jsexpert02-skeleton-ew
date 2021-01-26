@@ -2,6 +2,7 @@
 
 class Media {
     async getCamera(audio = false, video = true){
+        debugger
         return navigator.mediaDevices.getUserMedia({ // para obter os dados do usuário
             video,
             audio
